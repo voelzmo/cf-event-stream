@@ -7,7 +7,7 @@ let util = require('util')
 let oauthToken = process.env.OAUTH_TOKEN
 
 if (!oauthToken) {
-console.error("Please specify your CF oauth token in the env variable OAUTH_TOKEN. You can do so by executing this program with 'OAUTH_TOKEN=\"`cf oauth-token`\" node main.js'")
+console.error("Please specify your CF oauth token in the env variable OAUTH_TOKEN.")
         process.exit(1)
 }
 let parseResult = function(error, response, body){
@@ -15,7 +15,7 @@ let parseResult = function(error, response, body){
         if (response.statusCode != 200) {
 
           console.log(`error '${error}', status code '${response.statusCode}', response '${body}'`)
-        } else { 
+        } else {
           let parsedResponse = JSON.parse(body)
           let fnTest = function(resource){
                   if (!resource.entity.actor_name) {
