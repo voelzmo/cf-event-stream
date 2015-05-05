@@ -1,0 +1,13 @@
+{
+  "name": "cf-event-stream",
+  "description": "doing things with the CF events",
+  "author": "Marco Voelz <marco.voelz@sap.com>",
+  "dependencies": {
+    "request": "^2.53.0",
+    "rx": "^2.4.3"
+  },
+  "engines": {
+    "iojs": "*",
+    "npm": "2.x"
+  }
+}
