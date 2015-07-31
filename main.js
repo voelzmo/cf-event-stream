@@ -73,7 +73,7 @@ let parseResult = function (error, response, body) {
 }
 
 function queryEventAPIWithURL(path) {
-    let host = 'https://api.cf.sap-cf.com'
+    let host = 'https://api.cf.neo.ondemand.com'
     request({
             url: host + path,
             strictSSL: false,
